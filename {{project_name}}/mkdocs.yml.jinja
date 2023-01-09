@@ -1,0 +1,54 @@
+site_name: pysdbapi
+edit_uri: ""
+theme:
+  features:
+    - navigation.tracking
+    - navigation.top
+  logo: /assets/logo.png
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Off
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: On
+
+
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+
+plugins:
+  - search
+  - swagger-ui-tag
+  # - neoteroi.mkdocsoad:
+      # use_pymdownx: true
+
+# extra_css:
+  # - css/mkdocsoad.css
+
+
+  # - i18n:
+  #     default_language: en
+  #     docs_structure: folder
+  #     languages:
+  #       en:
+  #         name: English
+  #         link: /en/
+  #       ru:
+  #         name: Russian
+  #         link: /ru/
