@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "copier-fastapi-template"
+version = "0.1.0"
+description = ""
+authors = ["Roman Sotnikov <axeman.ofic@gmail.com>"]
+readme = "README.md"
+packages = [{include = "copier_fastapi_template"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+copier = "^7.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
