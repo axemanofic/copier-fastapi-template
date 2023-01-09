@@ -1,14 +1,30 @@
-# questions
+author_full_name:
+  type: str
+  help: What is your full name?
+
+author_nickname:
+  type: str
+  help: What is your nickname?
+  placeholder: axeman
+
 project_name:
   type: str
   help: What is your project name?
 
-use_command_startmodule:
-  type: bool
-  help: Will you use "poetry run startmodule" command in the project?
-  default: true
+project_version:
+  type: str
+  help: What is you project version?
+  default: 0.1.0
 
-module_name: "{{ module_name }}"
+project_description:
+  type: str
+  help: What is you project description?
+  default: ""
+
+project_author:
+  type: str
+  help: Write author project
+  default: "{{ author_full_name }} <{{ author_nickname }}@mail.com>"
 
 _subdirectory: project
 _templates_suffix: .tmpl

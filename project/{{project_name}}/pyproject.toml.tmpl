@@ -2,7 +2,7 @@
 name = "{{ project_name }}"
 version = "{{ project_version }}"
 description = "{{ project_description }}"
-authors = ["axeman <axeman.ofic@gmail.com>"]
+authors = ["{{ project_author }}"]
 readme = "README.md"
 packages = [{include = "src", from = ""}]
 
@@ -27,7 +27,7 @@ mkdocs-swagger-ui-tag = "^0.5.0"
 [tool.poetry.scripts]
 dev = "scripts.cli.commands.run:run_dev"
 genkey = "scripts.cli.commands.generate_key:generate_key"
-{% if use_command_startmodule %}startmodule = "scripts.cli.commands.startmodule:startmodule"{% endif %}
+startmodule = "scripts.cli.commands.startmodule:startmodule"
 init_db = "src.database.init_db:init_db"
 
 
