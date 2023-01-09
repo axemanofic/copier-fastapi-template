@@ -3,6 +3,12 @@ project_name:
   type: str
   help: What is your project name?
 
-module_name:
-  type: str
-  help: What is your Python module name?
+use_command_startmodule:
+  type: bool
+  help: Will you use "poetry run startmodule" command in the project?
+  default: true
+
+module_name: "{{ module_name }}"
+
+_subdirectory: project
+_templates_suffix: .tmpl
